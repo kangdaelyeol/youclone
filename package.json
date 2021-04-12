@@ -1,0 +1,10 @@
+{
+  "name": "youtubclone",
+  "version": "1.0.0",
+  "description": "clone wetube practice",
+  "main": "index.js",
+  "author": "dan",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
