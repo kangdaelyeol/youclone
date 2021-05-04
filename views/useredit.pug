@@ -1,0 +1,14 @@
+extends layouts/main 
+
+block contents 
+    .form-container 
+        form(action=routes.users+routes.editProfile, method="post")
+            label(for="avatar") Avatar 
+            input(type="file" id="avatar", name="avatar")
+            input(type="text", placeholder="name", name="name", required="true")
+            input(type="email", placeholder="email", name="email", required="true")
+            input(type="submit", value="Update Profile!")
+    a.form-container__link(href=routes.users+routes.changePassword) changePW
+
+
+//- edit-profile

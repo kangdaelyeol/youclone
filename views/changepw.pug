@@ -1,0 +1,9 @@
+extends layouts/main
+
+
+block contents 
+    form(action=routes.users+routes.changePassword, method="post")
+        input(type="password", name="password1")
+        input(type="password", name="password2")
+        input(type="submit", value="changePW")
+    p changepw

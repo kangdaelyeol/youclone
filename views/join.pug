@@ -1,0 +1,12 @@
+extends layouts/main 
+
+block contents 
+    p userJoin
+    .form-container
+        form(action=routes.join, method="post")
+            input(type="text", placeholder="full name", name="name", required="true")
+            input(type="email", placeholder="your email", name="email", required="true")
+            input(type="password", placeholder="password", name="password1", required="true")
+            input(type="password", placeholder="verify password", name="password2", required="true")
+            input(type="submit", value="Join Now!")
+        include partials/socialLogin
